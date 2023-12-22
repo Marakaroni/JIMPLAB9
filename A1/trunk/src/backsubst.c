@@ -8,7 +8,7 @@ int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
 				if(mat->r != mat->c || x->c!=1 || b->c!=1 || x->r!=b->r || x->r!=mat->r) return 2;
 				for(int i=0;i<mat->r;i++)
 				{
-					double sum=0;
+					double sum=0; //suma
 					for(int j=0;j<i;j++)
 					{
 						sum+=mat->data[mat->r-1-i][mat->c-1-j]*x->data[x->r-1-j][0];
