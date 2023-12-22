@@ -9,6 +9,5 @@
  */
 int eliminate(Matrix *mat, Matrix *b);
 void swap(Matrix *mat, int co, int czym);
-double absol(double wart);
 
 #endif
